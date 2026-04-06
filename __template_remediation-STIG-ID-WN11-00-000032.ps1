@@ -25,17 +25,21 @@
     PS C:\> .\__remediation_template(STIG-ID-WN11-00-000032).ps1 
 #>
 
-# Run as Administrator
-$RegistryPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\MDOP\BitLocker\OsVolume"
-$ValueName = "MinimumPinLength"
-$ValueData = 6  # Can be 6 or greater
+#Requires -RunAsAdministrator
 
-# Create the registry path if it doesn't exist
+$RegistryPath = "HKLM:\SOFTWARE\Policies\Microsoft\FVE"
+$ValueName = "MinimumPIN"
+$ValueData = 6
+
+# Create path if needed
 if (-not (Test-Path -Path $RegistryPath)) {
     New-Item -Path $RegistryPath -Force | Out-Null
 }
 
-# Set the minimum PIN length value
+# Set the value
 New-ItemProperty -Path $RegistryPath -Name $ValueName -Value $ValueData -PropertyType DWord -Force | Out-Null
 
-Write-Host "Registry value set successfully: MinimumPinLength = $ValueData"
+Write-Host "Registry value set: $RegistryPath\$ValueName = $ValueData" -ForegroundColor Green
+
+# Refresh Group Policy
+gpupdate /force
