@@ -16,12 +16,12 @@
 .TESTED ON
     Date(s) Tested  : 2026-04-05
     Tested By       : Oliver Ponder
-    Systems Tested  : 
+    Systems Tested  : Microsoft Windows 11 Pro 10.0.26200 N/A Build 26200
     PowerShell Ver. : 5.1.26100.7920
 
 .USAGE
     Put any usage instructions here.
-    Example syntax: Microsoft Windows 11 Pro 10.0.26200 N/A Build 26200
+    Example syntax: 
     PS C:\> .\__remediation_template(STIG-ID-WN11-AU-000500).ps1 
 #>
 
