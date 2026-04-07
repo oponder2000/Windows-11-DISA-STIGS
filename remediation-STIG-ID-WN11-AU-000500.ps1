@@ -22,7 +22,7 @@
 .USAGE
     Put any usage instructions here.
     Example syntax: 
-    PS C:\> .\__remediation_template(STIG-ID-WN11-AU-000500).ps1 
+    PS C:\> .\remediation-STIG-ID-WN11-AU-000500.ps1
 #>
 
 # WN11-AU-000500 - Set Application Event Log max size to 32768 KB or greater
