@@ -52,6 +52,32 @@ apt update > /dev/null 2>&1
 echo -e "${YELLOW}[*] Installing sssd package...${NC}"
 apt install -y sssd > /dev/null 2>&1
 
+# Create a minimal SSSD configuration if it doesn't exist or is empty
+echo -e "${YELLOW}[*] Configuring sssd service...${NC}"
+
+# Backup existing config if present
+if [[ -f /etc/sssd/sssd.conf ]] && [[ -s /etc/sssd/sssd.conf ]]; then
+    echo -e "${YELLOW}[*] Backing up existing sssd.conf...${NC}"
+    cp /etc/sssd/sssd.conf /etc/sssd/sssd.conf.backup-$(date +%s)
+else
+    # Create minimal SSSD configuration
+    mkdir -p /etc/sssd
+    cat > /etc/sssd/sssd.conf << 'SSSD_EOF'
+[sssd]
+services = nss, pam
+domains = LOCAL
+
+[domain/LOCAL]
+id_provider = local
+auth_provider = local
+SSSD_EOF
+    echo -e "${GREEN}[✓] Created minimal sssd.conf configuration${NC}"
+fi
+
+# Set proper permissions on sssd.conf
+chmod 600 /etc/sssd/sssd.conf
+chown root:root /etc/sssd/sssd.conf
+
 # Enable sssd service to start on boot
 echo -e "${YELLOW}[*] Enabling sssd service...${NC}"
 systemctl enable sssd.service > /dev/null 2>&1
@@ -59,6 +85,9 @@ systemctl enable sssd.service > /dev/null 2>&1
 # Start sssd service
 echo -e "${YELLOW}[*] Starting sssd service...${NC}"
 systemctl start sssd.service > /dev/null 2>&1
+
+# Give the service a moment to start
+sleep 2
 
 # Verify installation and status
 echo -e "${YELLOW}[*] Verifying installation and status...${NC}"
