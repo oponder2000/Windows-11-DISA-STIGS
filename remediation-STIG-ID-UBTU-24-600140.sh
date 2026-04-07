@@ -1,30 +1,29 @@
-<#
-.SYNOPSIS
-    This Bash script restricts access to the kernel message buffer limits only to root. This prevents attackers from gaining additional system information as a nonprivileged user.
+#.SYNOPSIS
+#    This Bash script restricts access to the kernel message buffer limits only to root. This prevents attackers from gaining additional system information as a nonprivileged user.
+#
+#.NOTES
+#    Author          : Oliver Ponder
+#    LinkedIn        : https://www.linkedin.com/in/oliver-ponder/
+#    GitHub          : https://github.com/oponder2000
+#    Date Created    : 2026-04-07
+#    Last Modified   : 2026-04-07
+#    Version         : 1.0
+#    CVEs            : N/A
+#    Plugin IDs      : N/A
+#    STIG-ID         : UBTU-24-600140
+#
+#.TESTED ON
+#    Date(s) Tested  : 2026-04-07
+#    Tested By       : Oliver Ponder
+#    Systems Tested  : Ubuntu 24.04.4 LTS
+#    Bash Ver. : version 5.2.21(1)-release (x86_64-pc-linux-gnu)
+#
+#.USAGE
+#    Put any usage instructions here.
+#    Example syntax: 
+#    chmod +x remediation-STIG-ID-UBTU-24-600140.sh
+#    ./remediation-STIG-ID-UBTU-24-600140.sh
 
-.NOTES
-    Author          : Oliver Ponder
-    LinkedIn        : https://www.linkedin.com/in/oliver-ponder/
-    GitHub          : https://github.com/oponder2000
-    Date Created    : 2026-04-07
-    Last Modified   : 2026-04-07
-    Version         : 1.0
-    CVEs            : N/A
-    Plugin IDs      : N/A
-    STIG-ID         : UBTU-24-600140
-
-.TESTED ON
-    Date(s) Tested  : 2026-04-07
-    Tested By       : Oliver Ponder
-    Systems Tested  : Ubuntu 24.04.4 LTS
-    Bash Ver. : version 5.2.21(1)-release (x86_64-pc-linux-gnu)
-
-.USAGE
-    Put any usage instructions here.
-    Example syntax: 
-    chmod +x remediation-STIG-ID-UBTU-24-600140.sh
-    ./remediation-STIG-ID-UBTU-24-600140.sh
-#>
 
 #!/bin/bash
 # STIG: UBTU-24-600140
