@@ -126,9 +126,10 @@ Five STIG controls were successfully remediated on the Ubuntu 24.04 system using
 
 **Remediation Script:** [remediation-STIG-ID-UBTU-24-100650.sh](https://github.com/oponder2000/DISA-STIGS/blob/main/remediation-STIG-ID-UBTU-24-100650.sh)
 
-![Remediation 4 - Before](https://github.com/user-attachments/assets/cf2fa5b5-fccd-447b-96c9-f6121aba328b)
+<img width="3011" height="854" alt="5a" src="https://github.com/user-attachments/assets/ea0d2a84-9a92-4cbd-9ddf-413877ae0a51" />
 
-![Remediation 4 - After](https://github.com/user-attachments/assets/3c73cb8c-08e4-4aaa-9c1f-4e5c9e5b5e5e)
+
+<img width="3026" height="636" alt="5b" src="https://github.com/user-attachments/assets/3996875a-6990-4bc3-b4e5-4c12def7b253" />
 
 ### STIG ID: UBTU-24-400310
 
@@ -136,9 +137,10 @@ Five STIG controls were successfully remediated on the Ubuntu 24.04 system using
 
 **Remediation Script:** [remediation-STIG-ID-UBTU-24-400310.sh](https://github.com/oponder2000/DISA-STIGS/blob/main/remediation-STIG-ID-UBTU-24-400310.sh)
 
-![Remediation 5 - Before](https://github.com/user-attachments/assets/ac838aeb-48a5-48b5-b82f-49b65d9a588b)
+<img width="3009" height="843" alt="6a" src="https://github.com/user-attachments/assets/41392092-d7f9-49bd-8404-cc0ecbd59438" />
 
-![Remediation 5 - After](https://github.com/user-attachments/assets/3d83e4f5-9c5e-4b5f-8e7f-5f5e4e3d3c2b)
+
+<img width="3023" height="583" alt="6b" src="https://github.com/user-attachments/assets/e8b8b6b2-8d9f-4709-8c24-f067c2289976" />
 
 ---
 
