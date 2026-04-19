@@ -56,7 +56,7 @@ Powershell Script: https://github.com/oponder2000/DISA-STIGS/blob/main/remediati
 
 ## Ubuntu Machine
 
-###Original Scan
+### Original Scan
 <img width="3011" height="935" alt="1" src="https://github.com/user-attachments/assets/a7f25863-4f9e-4499-aead-3ae6be354b13" />
 
 ### Remediation 1
