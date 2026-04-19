@@ -1,4 +1,4 @@
-#### Windows Machine
+## Windows Machine
 
 ### Original Scan
 <img width="3016" height="991" alt="1a" src="https://github.com/user-attachments/assets/a75b09ee-3160-461e-b4dc-d26308b1daa2" />
@@ -48,7 +48,7 @@ Powershell Script: https://github.com/oponder2000/DISA-STIGS/blob/main/remediati
 <img width="3020" height="386" alt="6b" src="https://github.com/user-attachments/assets/f0d522c4-367e-4ac6-bf37-978bf9576c68" />
 
 
-#### Ubuntu Machine
+## Ubuntu Machine
 
 ###Original Scan
 <img width="3011" height="935" alt="1" src="https://github.com/user-attachments/assets/a7f25863-4f9e-4499-aead-3ae6be354b13" />
