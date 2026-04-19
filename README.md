@@ -5,6 +5,7 @@
 
 ### Remediation 1
 ID: WN11-AU-000500
+
 Powershell Script: https://github.com/oponder2000/DISA-STIGS/blob/main/remediation-STIG-ID-WN11-AU-000500.ps1
 
 <img width="3014" height="813" alt="2a" src="https://github.com/user-attachments/assets/81fa1f09-99fb-4f66-9ad3-026c5da885fd" />
